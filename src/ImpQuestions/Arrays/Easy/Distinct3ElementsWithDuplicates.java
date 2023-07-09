@@ -1,20 +1,20 @@
 package ImpQuestions.Arrays.Easy;
 
-public class Distinct3Elements {
+public class Distinct3ElementsWithDuplicates {
     public static void main(String[] args) {
-        int[] arr = {10, 4, 3, 50, 23, 90, 90, 51, 23, 23};
+        int[] arr = {90, 4, 3, 4, 3, 50, 230, 90};
         int firstMax = Integer.MIN_VALUE;
         int secondMax = Integer.MIN_VALUE;
         int thirdMax = Integer.MIN_VALUE;
         for(int i=0;i<arr.length;i++) {
-            if(arr[i] > firstMax) {
+            if(arr[i] >= firstMax) {
                 thirdMax = secondMax;
                 secondMax = firstMax;
                 firstMax = arr[i];
-            } else if(arr[i] > secondMax) {
+            } else if(arr[i] >= secondMax) {
                 thirdMax = secondMax;
                 secondMax = arr[i];
-            } else if(arr[i] > thirdMax) {
+            } else if(arr[i] >= thirdMax) {
                 thirdMax = arr[i];
             }
         }
