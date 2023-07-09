@@ -1,0 +1,1 @@
+For Insert and Delete, we have to shift the elements and make space or remove the empty space and proceed with insertion or deletion
