@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class MoveZerosToEnd {
     public static void main(String[] args) {
-        int[] nums = {1, 2, 0, 4, 3, 0, 5, 6};
+        int[] nums = {0, 0, 0, 4, 3, 0, 5, 6};
         System.out.println(Arrays.toString(nums));
         moveZerosToEnd(nums);
         System.out.println(Arrays.toString(nums));
