@@ -5,8 +5,8 @@ import java.util.Map;
 
 public class CountFrequencyOfAnagrams {
     public static void main(String[] args) {
-        String str = "aaabaa";
-        String pattern = "ab";
+        String str = "a";
+        String pattern = "a";
         int countAnagrams = countFrequencyOfAnagrams(str, pattern);
         System.out.println(countAnagrams);
     }
