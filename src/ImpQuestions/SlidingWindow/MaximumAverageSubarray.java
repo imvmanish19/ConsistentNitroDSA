@@ -2,7 +2,7 @@ package ImpQuestions.SlidingWindow;
 
 public class MaximumAverageSubarray {
     public static void main(String[] args) {
-        int[] nums = {15,3,1,3,4,-2,3,-4};
+        int[] nums = {1,3,1,13,4,-2,3,-4};
         int k = 2;
         maximumAverageSubarray(nums, k);
     }
@@ -55,6 +55,7 @@ public class MaximumAverageSubarray {
                 double avg = (double) sum / k;
                 max = Math.max(max, avg);
                 sum -= nums[start];
+                start++;
             }
         }
         System.out.println("Max: "+max);
